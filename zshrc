@@ -46,6 +46,8 @@ lb () {
 alias gist="gist -c"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
+alias autopr="hub pull-request"
+alias k="kubectl"
 
 # Customize to your needs...
 export PATH=/usr/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/sbin:/opt/local/lib/postgresql83/bin:$PATH
@@ -61,5 +63,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/home/andrew/.conscript/bin:$PATH"
+export PATH="/home/andrew/.bin:$PATH"
 
 [ -s "/home/andrew/.scm_breeze/scm_breeze.sh" ] && source "/home/andrew/.scm_breeze/scm_breeze.sh"
