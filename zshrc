@@ -44,8 +44,8 @@ lb () {
 }
 
 alias gist="gist -c"
-alias pbcopy="xclip -selection clipboard"
-alias pbpaste="xclip -selection clipboard -o"
+alias xcopy="xclip -selection clipboard"
+alias xpaste="xclip -selection clipboard -o"
 alias autopr="hub pull-request"
 alias k="kubectl"
 
@@ -56,13 +56,11 @@ export PATH=/usr/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bi
 export NODE_PATH="/usr/local/lib/node_modules"
 eval "$(fasd --init auto)"
 
-[ -s "/Users/andrew/.scm_breeze/scm_breeze.sh" ] && source "/Users/andrew/.scm_breeze/scm_breeze.sh"
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/home/andrew/.conscript/bin:$PATH"
-export PATH="/home/andrew/.bin:$PATH"
-
-[ -s "/home/andrew/.scm_breeze/scm_breeze.sh" ] && source "/home/andrew/.scm_breeze/scm_breeze.sh"
+export PATH="$HOME/.conscript/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
